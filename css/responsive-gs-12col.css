@@ -43,7 +43,7 @@
 /* MEDIA QUERIES FOR DISPLAYS +768px */
 @media ( min-width : 768px ) {
 	.container {} /* Add a width here if you'd like a max width for your site */
-	/* .row { margin: 0 -1.04%; } */ /* Uncomment this style if you would like to remove margins that appear around rows*/
+	/* .row { margin: 0 -1.04%; } */ /* Uncomment this style if you would like to remove default margins around rows */
 	.col { margin-left: 1.04%; margin-right: 1.04%; }
 	
 	/* column widths +768px */
