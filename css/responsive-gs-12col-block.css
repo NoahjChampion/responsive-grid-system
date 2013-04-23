@@ -1,0 +1,70 @@
+/* 
+	12 COLUMN - RESPONSIVE GRID SYSTEM
+	RE-DEVELOPED BY DAVID ROONEY TO ALLOW FOR MULTI-LEVEL GRID ROWS AND ADDED 
+	MEDIA QUERY SUPPORT FOR IE8 VIA JS, WHICH IS REQUIRED FOR A MOBILE FIRST APPROACH.
+	( WITH THANKS TO DENIS LEBLANC FOR THE ORIGINAL - http://responsive.gs )
+	URL - http://zavadesign.com
+	VERSION - 1.0
+	LICENSED UNDER GPL & MIT
+*/
+
+
+/* 	SET ALL ELEMENTS BOX-SIZING TO BORDER-BOX
+	If you need support for IE7 and lower use polyfill: https://github.com/Schepp/box-sizing-polyfill */
+* { 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* MAIN CONTAINER */
+.container { 
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/* SELF CLEARING FLOATS - CLEARFIX METHOD */
+.row:after, .col:after, .clr:after, .group:after { 
+	content: ""; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+										  
+/* DEFAULT ROW STYLES */
+.row { 
+	letter-spacing: -0.31em; /* webkit: collapse white-space between units */
+	word-spacing: -0.31m; /* IE < 8 && gecko: collapse white-space between units */
+}
+
+/* DEFAULT COLUMN STYLES */
+.col { 
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 1.4em; /* set according to preference */
+	letter-spacing: normal; /* webkit: reset white-space between units */
+    word-spacing: normal; /* IE < 8 && gecko: rest white-space between units */
+	vertical-align: top;
+}
+
+/* MEDIA QUERIES FOR DISPLAYS +768px */
+@media ( min-width : 768px ) {
+	.container {} /* Add a width here if you'd like a max width for your site */
+	.row { margin: 0 -1.04%; } /* Uncomment this style if you would like to remove margins that appear around rows*/
+	.col { margin-left: 1.04%; margin-right: 1.04%; }
+	
+	/* column widths +768px */
+	.span_1 { width: 6.25%; }
+	.span_2 { width: 14.585%; }
+	.span_3 { width: 22.92%; }
+	.span_4 { width: 31.25%; }
+	.span_5 { width: 39.58%; }
+	.span_6 { width: 47.92%; }
+	.span_7 { width: 56.26%; }
+	.span_8 { width: 64.58%; }
+	.span_9 { width: 72.92%; }
+	.span_10 { width: 81.25%; }
+	.span_11 { width: 89.58%; }
+	.span_12 { width: 100%; }
+}

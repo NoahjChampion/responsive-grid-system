@@ -1,0 +1,108 @@
+<!DOCTYPE HTML> 
+<html itemscope itemtype="http://schema.org/Product">
+<head>
+
+	<title>Responsive Grid System</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Simple responsive grid system that allows for multi-level rows for displaying items such as an image gallery or design portfolio, and adds support for IE8 which is required for a mobile first approach." />
+	
+	<!-- Call all CSS here rather than @import for performance reasons, along with scripts for IE compatibility -->
+	<link rel="stylesheet" media="all" href="css/responsive-gs-12col-block.css" />
+	<link rel="stylesheet" media="all" href="css/reset.css" />
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="css/ie.css" />
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" media="all" href="css/style.css" />
+	
+	<!-- CSS purely for this example page, so you can see each grid element on the frontend -->
+	<style>
+	.col {
+		min-height: 100px;
+		background: grey;
+	}
+	</style>
+	
+</head>
+
+<body>
+
+<div class="container">
+	
+	<!-- This example displays a basic 3 column row -->
+	<div class="row">
+		<div class="col span_4">
+		
+		</div>
+		<div class="col span_4">
+		
+		</div>
+		<div class="col span_4">
+		
+		</div>
+	</div>
+	
+	<!-- This example displays a multi-level grid row using different grid element widths -->
+	<div class="row">		
+		<div class="col span_3">
+			
+		</div><div class="col span_3">
+			
+		</div><div class="col span_3">
+		
+		</div><div class="col span_3">
+		
+		</div>
+		
+		<div class="col span_3">
+			<p>This is some text, to see what it looks like.</p>
+			<p>This is some text, to see what it looks like.</p>
+			<p>This is some text, to see what it looks like.</p>
+			<p>This is some text, to see what it looks like.</p>
+			<p>This is some text, to see what it looks like.</p>
+			<p>This is some text, to see what it looks like.</p>
+			<p>This is some text, to see what it looks like.</p>
+			<p>This is some text, to see what it looks like.</p>
+			<p>This is some text, to see what it looks like.</p>
+			<p>This is some text, to see what it looks like.</p>
+			<p>This is some text, to see what it looks like.</p>
+			<p>This is some text, to see what it looks like.</p>
+		</div>
+		<div class="col span_1">
+		
+		</div>
+		<div class="col span_4">
+		
+		</div>
+		<div class="col span_4">
+		
+		</div>
+		
+		<div class="col span_10">
+		
+		</div>
+		<div class="col span_1">
+		
+		</div>
+		<div class="col span_1">
+		
+		</div>
+
+		<div class="col span_4">
+			
+		</div>
+		<div class="col span_4">
+		
+		</div>
+		<div class="col span_4">
+		
+		</div>
+	</div>
+	
+</div>
+	
+</body>
+</html>
