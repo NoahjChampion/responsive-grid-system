@@ -32,12 +32,20 @@
 	visibility: hidden;
 }
 										  
+/* DEFAULT ROW STYLES */
+.row { 
+	letter-spacing: -0.31em; /* webkit: collapse white-space between units */
+	word-spacing: -0.31m; /* IE < 8 && gecko: collapse white-space between units */
+}
+
 /* DEFAULT COLUMN STYLES */
 .col { 
-	display: block;
-	float: left;
+	display: inline-block;
 	width: 100%;
 	margin-bottom: 1.4em; /* set according to preference */
+	letter-spacing: normal; /* webkit: reset white-space between units */
+    word-spacing: normal; /* IE < 8 && gecko: rest white-space between units */
+	vertical-align: top;
 }
 
 /* MEDIA QUERIES FOR DISPLAYS +768px */
